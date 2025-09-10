@@ -110,3 +110,27 @@ rl.question(
     }
   }
 );
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Hola mundo</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',  // centra verticalmente
+    alignItems: 'center',      // centra horizontalmente
+    backgroundColor: '#fff',   // fondo blanco
+  },
+  text: {
+    fontSize: 24,
+    color: 'blue',             
+    fontWeight: 'bold',
+  },
+});
